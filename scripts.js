@@ -42,6 +42,8 @@ const attackContainer = document.getElementById('attacks_container')
 const attackAddButton = document.getElementById('attack_add')
 // Expertise
 const expertiseContainer = document.getElementById('expertise_container')
+// Skills
+const skillsValues = document.getElementById('skills_values')
 
 // Constants
 const ALL_ELEMENTS = [
@@ -78,6 +80,7 @@ const ALL_ELEMENTS = [
   defenceArmor,
   defenceShield,
   defenceOthers,
+  skillsValues,
 ]
 
 const NUMBER_INPUTS = [
@@ -287,7 +290,7 @@ function renderExpertises() {
     EXPERTISE_IDS.forEach((expertiseId) => {
       const expertiseInput = document.createElement('input')
       expertiseInput.id = `${expertiseId}_${index}`
-      if(expertiseId === 'expertise_mod'){
+      if (expertiseId === 'expertise_mod') {
         expertiseInput.placeholder = EXPERTISES_MOD[index]
       }
       expertiseRow.appendChild(expertiseInput)
@@ -345,6 +348,7 @@ function setFormData(newFormData) {
   defenceOthers.value = newFormData.defenceOthers
   newFormData.attacks.length > 0 && addAttackRow(newFormData.attacks)
   newFormData.expertises && renderImportedExpertises(newFormData.expertises)
+  skillsValues.value = newFormData.skillsValues
 }
 
 function getFormData() {
@@ -384,6 +388,7 @@ function getFormData() {
     defenceOthers: defenceOthers.value,
     attacks: getAttacks(),
     expertises: getExpertises(),
+    skillsValues: skillsValues.value
   }
 }
 
