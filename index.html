@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./global.css" />
+    <link rel="stylesheet" type="text/css" href="./profile.css" />
+    <link rel="stylesheet" type="text/css" href="./attributes.css" />
+    <link rel="stylesheet" type="text/css" href="./status.css" />
+    <link rel="stylesheet" type="text/css" href="./armor_defence.css" />
+    <link rel="stylesheet" type="text/css" href="./attacks.css" />
+    <link rel="stylesheet" type="text/css" href="./expertise.css" />
+    <link rel="stylesheet" type="text/css" href="./skills.css" />
+    <title>Tormenta 20 - Ficha</title>
+  </head>
+  <body>
+    <form autocomplete="off">
+      <section>
+        <h1>Personagem</h1>
+        <input id="jsonData" type="file" value="Import" accept="application/JSON" />
+        <button id="importButton">Importar Personagem</button>
+        <div class="profile_container">
+          <div class="profile_info">
+            <label for="profileName">Nome</label>
+            <input id="profileName" placeholder="Nome do Personagem" />
+            <label for="profilePlayer">Jogador</label>
+            <input id="profilePlayer" placeholder="Nome do Jogador" />
+            <label for="profileRace">Raça</label>
+            <input id="profileRace" placeholder="Raça" />
+            <label for="profileOrigin">Origem</label>
+            <input id="profileOrigin" placeholder="Origem do Personagem" />
+            <label for="profileClass">Classe & Nível</label>
+            <input id="profileClass" placeholder="Classe|Nível" />
+          </div>
+          <div class="pipe"></div>
+          <div class="profile_proficience">
+            <p>Características e Proficiencias</p>
+            <textarea id="profileEtc"></textarea>
+          </div>
+        </div>
+        <div class="attributes_container">
+          <div class="attributes_image">
+            <label for="attribute_for">FOR</label>
+            <input id="attribute_for" class="attributes_point" placeholder="0" />
+            <input id="modifier_for" class="attributes_modifier" placeholder="0" />
+          </div>
+          <div class="attributes_image">
+            <label for="attribute_des">DES</label>
+            <input id="attribute_des" class="attributes_point" placeholder="0" />
+            <input id="modifier_des" class="attributes_modifier" placeholder="0" />
+          </div>
+          <div class="attributes_image">
+            <label for="attribute_con">CON</label>
+            <input id="attribute_con" class="attributes_point" placeholder="0" />
+            <input id="modifier_con" class="attributes_modifier" placeholder="0" />
+          </div>
+          <div class="attributes_image">
+            <label for="attribute_int">INT</label>
+            <input id="attribute_int" class="attributes_point" placeholder="0" />
+            <input id="modifier_int" class="attributes_modifier" placeholder="0" />
+          </div>
+          <div class="attributes_image">
+            <label for="attribute_sab">SAB</label>
+            <input id="attribute_sab" class="attributes_point" placeholder="0" />
+            <input id="modifier_sab" class="attributes_modifier" placeholder="0" />
+          </div>
+          <div class="attributes_image">
+            <label for="attribute_car">CAR</label>
+            <input id="attribute_car" class="attributes_point" placeholder="0" />
+            <input id="modifier_car" class="attributes_modifier" placeholder="0" />
+          </div>
+        </div>
+        <div class="status_container">
+          <div class="status red">
+            <input id="status_maxhp" placeholder="0" />
+            <p>/</p>
+            <input id="status_hp" placeholder="0" />
+          </div>
+          <div class="status blue">
+            <input id="status_maxmana" placeholder="0" />
+            <p>/</p>
+            <input id="status_mana" placeholder="0" />
+          </div>
+        </div>
+        <div class="armor_defence_container">
+          <div class="armor_container">
+            <div class="armor_column armor_name">
+              <p>Armadura|Escudo</p>
+              <input id="armor_name_1" />
+              <input id="armor_name_2" />
+            </div>
+            <div class="armor_column armor_points">
+              <p>Defesa</p>
+              <input id="armor_defence_1" />
+              <input id="armor_defence_2" />
+            </div>
+            <div class="armor_column armor_points">
+              <p>Penalidade</p>
+              <input id="armor_penalty_1" />
+              <input id="armor_penalty_2" />
+            </div>
+          </div>
+          <div class="defence_container">
+            <div class="defence_column">
+              <label>Defesa</label>
+              <input id="defence_value" />
+            </div>
+            <h1>=</h1>
+            <div class="defence_column">
+              <p class="defence_default">10</p>
+            </div>
+            <h1>+</h1>
+            <div class="defence_column">
+              <label>Des</label>
+              <input id="defence_des_mod" />
+            </div>
+            <h1>+</h1>
+            <div class="defence_column">
+              <label>Armadura</label>
+              <input id="defence_armor" />
+            </div>
+            <h1>+</h1>
+            <div class="defence_column">
+              <label>Escudo</label>
+              <input id="defence_shield" />
+            </div>
+            <h1>+</h1>
+            <div class="defence_column">
+              <label>Outros</label>
+              <input id="defence_others" />
+            </div>
+          </div>
+        </div>
+        <div class="attacks_container">
+          <div id="attacks_container">
+            <div class="attacks_title">
+              <p>Ataques</p>
+              <p>Bônus de Ataque</p>
+              <p>Dano</p>
+              <p>Crítico</p>
+              <p>Tipo</p>
+              <p>Alcance</p>
+            </div>
+            <div class="attacks_row">
+              <input id="attack_name_0" />
+              <input id="attack_bonus_0" />
+              <input id="attack_damage_0" />
+              <input id="attack_critical_0" />
+              <input id="attack_type_0" />
+              <input id="attack_range_0" />
+            </div>
+            <div class="attacks_row">
+              <input id="attack_name_1" />
+              <input id="attack_bonus_1" />
+              <input id="attack_damage_1" />
+              <input id="attack_critical_1" />
+              <input id="attack_type_1" />
+              <input id="attack_range_1" />
+            </div>
+            <div class="attacks_row">
+              <input id="attack_name_2" />
+              <input id="attack_bonus_2" />
+              <input id="attack_damage_2" />
+              <input id="attack_critical_2" />
+              <input id="attack_type_2" />
+              <input id="attack_range_2" />
+            </div>
+            <div class="attacks_row">
+              <input id="attack_name_3" />
+              <input id="attack_bonus_3" />
+              <input id="attack_damage_3" />
+              <input id="attack_critical_3" />
+              <input id="attack_type_3" />
+              <input id="attack_range_3" />
+            </div>
+          </div>
+        </div>
+        <input title="Adicione mais uma linha de ataque" type="button" id="attack_add" value="+" />
+      </section>
+      <div class="pipe"></div>
+      <section>
+        <h1>Pericias</h1>
+        <div id="expertise_container" class="expertise_container">
+          <div class='expertise_header'>
+            <p>Pericias</p>
+            <p>Total</p>
+            <p></p>
+            <p>1/2 Nível</p>
+            <p>Mod. de Atributo</p>
+            <p>Treino</p>
+            <p>Outros</p>
+          </div>
+        </div>
+      </section>
+      <div class="pipe"></div>
+      <section>
+        <h1>Habilidades e Magias</h1>
+        <div id='skills_container' class='skills_container'>
+          
+        </div>
+      </section>
+    </form>
+  </body>
+  <script src="./scripts.js"></script>
+</html>

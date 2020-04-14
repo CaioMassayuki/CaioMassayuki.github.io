@@ -1,0 +1,56 @@
+.armor_defence_container {
+  display: flex;
+  width: calc(100% - 8px);
+  margin: 8px 8px;
+  font-size: 12px;
+}
+.armor_defence_container div {
+  width: 100%;
+  margin: 0 4px;
+}
+
+.armor_container {
+  border: 1px solid black;
+  display: flex;
+  padding: 4px;
+}
+
+.armor_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.armor_column input{
+  border-bottom: 1px solid black;
+  font-size: 18px;
+}
+
+.armor_points input{
+  width: 36px;
+  text-align: center;
+}
+
+
+.defence_container {
+  border: 1px solid black;
+  display: flex;
+  padding: 4px;
+}
+.defence_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.defence_column input{
+  border-bottom: 1px solid black;
+  width: 36px;
+  font-size: 18px;
+  text-align: center;
+}
+.defence_default{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top:12px;
+}

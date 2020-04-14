@@ -1,0 +1,40 @@
+.attributes_container {
+  display: flex;
+}
+
+.attributes_container label {
+  position: relative;
+  font-weight: bold;
+  top: 16px;
+}
+
+.attributes_image {
+  background-image: url('./assets/atributecontainer.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 112px;
+  height: 149px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attributes_point {
+  width: 80px;
+  height: 56px;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  top: 16px;
+}
+
+.attributes_modifier {
+  width: 36px;
+  height: 24px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 16px;
+  position: relative;
+  top: 16px;
+}
