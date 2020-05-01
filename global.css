@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'BreatheFire-65pg';
+  src: url('assets/BreatheFire-65pg.ttf') format('truetype');
+}
+
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'BreatheFire-65pg', Times, serif;
+  padding: 24px;
 }
 
 form {
@@ -17,6 +23,7 @@ section {
 input {
   border: none;
   outline: none;
+  font-family: 'BreatheFire-65pg', Times, serif;
 }
 
 p{
@@ -25,6 +32,13 @@ p{
 
 h1{
   margin: 4px 0;
+}
+
+span {
+  font-weight: 800;
+  font-size: 16px;
+  align-self: center;
+  margin: 0 8px;
 }
 
 .pipe {

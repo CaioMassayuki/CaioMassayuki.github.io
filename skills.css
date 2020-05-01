@@ -1,0 +1,16 @@
+.skills_container {
+  width: 100%;
+}
+
+#skills_values {
+  width: 98%;
+  min-height: 221px;
+  padding: 12px 0 0 12px;
+}
+
+
+.skills_values::placeholder {
+  font-weight: 800;
+  color: black;
+  font-family: 'BreatheFire-65pg', Times, serif;
+}

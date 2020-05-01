@@ -1,11 +1,15 @@
 .attacks_container {
-  width: calc(100% - 4px);
-  height: 320px;
   border: 1px solid black;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin-top: 24px;
+  padding-bottom: 48px;
+}
+
+#attacks_container {
+  padding: 24px 12px 0 12px;
 }
 
 .attacks_container::-webkit-scrollbar {
@@ -35,6 +39,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 40px;
+  grid-column-gap: 12px;
   text-align: center;
 }
 .attacks_row p:first-child {
@@ -54,9 +59,19 @@
 }
 
 #attack_add {
-  width: 80px;
-  height: 24px;
-  margin: 4px 0;
-  background: rgba(0, 140, 255, 0.5);
-  border-radius: 100%;
+  font-size: 16px;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+#attack_add:hover {
+  background: black;
+  color: white;
+  transition: 0.2s ease-out;
 }

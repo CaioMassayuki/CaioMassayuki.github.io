@@ -282,6 +282,7 @@ function renderExpertises() {
     expertiseName.textContent = item
     expertiseRow.appendChild(expertiseName)
     const expertiseTotal = document.createElement('input')
+    expertiseTotal.className = 'expertise_total'
     expertiseTotal.id = `expertise_total_${index}`
     expertiseRow.appendChild(expertiseTotal)
     const expertiseEqual = document.createElement('b')
