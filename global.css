@@ -1,5 +1,15 @@
+@font-face {
+  font-family: 'BreatheFire-65pg';
+  src: url('assets/BreatheFire-65pg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TheWildBreathOfZelda-15Lv';
+  src: url('assets/TheWildBreathOfZelda-15Lv.ttf') format('truetype');
+}
+
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courrier', Courier, monospace;
 }
 
 form {
