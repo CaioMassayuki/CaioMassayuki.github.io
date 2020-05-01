@@ -2,8 +2,8 @@
   border: 1px solid black;
   border-radius: 10px;
   width: 520px;
-  height: 840px;
-  padding: 0 8px;
+  max-height: 624px;
+  padding: 12px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -57,4 +57,8 @@
   font-size: 18px;
   position: relative;
   top: 12px;
+}
+
+.expertise_total {
+  border: 1px solid black;
 }

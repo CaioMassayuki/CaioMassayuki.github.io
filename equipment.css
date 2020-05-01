@@ -1,0 +1,29 @@
+.equipment_container {
+  display: grid;
+  grid-template-rows: 24px 1fr 12px;
+  border: 1px solid black;
+  width: 520px;
+  margin-top: 24px;
+  padding: 16px;
+  min-height: 200px;
+}
+
+.equipment_input-wrapper {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.equipment_input {
+  font-size: 16px;
+  text-align: start;
+  border-bottom: 1px solid black;
+}
+
+.equipment_input-money {
+  display: flex;
+  justify-content: space-between;
+}
+
+.money {
+  display: flex;
+}
