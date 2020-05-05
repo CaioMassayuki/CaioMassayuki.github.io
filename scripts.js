@@ -44,6 +44,13 @@ const attackAddButton = document.getElementById('attack_add')
 const expertiseContainer = document.getElementById('expertise_container')
 // Skills
 const skillsValues = document.getElementById('skills_values')
+// Equipment
+const equipment1 = document.getElementById('equipment_0')
+const equipment2 = document.getElementById('equipment_1')
+const equipment3 = document.getElementById('equipment_2')
+const equipment4 = document.getElementById('equipment_3')
+const tsMoney = document.getElementById('money_TS')
+const toMoney = document.getElementById('money_TO')
 
 // Constants
 const ALL_ELEMENTS = [
@@ -81,6 +88,12 @@ const ALL_ELEMENTS = [
   defenceShield,
   defenceOthers,
   skillsValues,
+  equipment1,
+  equipment2,
+  equipment3,
+  equipment4,
+  tsMoney,
+  toMoney,
 ]
 
 const NUMBER_INPUTS = [
@@ -109,6 +122,8 @@ const NUMBER_INPUTS = [
   defenceArmor,
   defenceShield,
   defenceOthers,
+  tsMoney,
+  toMoney,
 ]
 
 const EXPERTISES = {
@@ -350,6 +365,12 @@ function setFormData(newFormData) {
   newFormData.attacks.length > 0 && addAttackRow(newFormData.attacks)
   newFormData.expertises && renderImportedExpertises(newFormData.expertises)
   skillsValues.value = newFormData.skillsValues
+  equipment1.value = newFormData.equipment1
+  equipment2.value = newFormData.equipment2
+  equipment3.value = newFormData.equipment3
+  equipment4.value = newFormData.equipment4
+  tsMoney.value = newFormData.tsMoney
+  toMoney.value = newFormData.toMoney
 }
 
 function getFormData() {
@@ -389,7 +410,13 @@ function getFormData() {
     defenceOthers: defenceOthers.value,
     attacks: getAttacks(),
     expertises: getExpertises(),
-    skillsValues: skillsValues.value
+    skillsValues: skillsValues.value,
+    equipment1: equipment1.value,
+    equipment2: equipment2.value,
+    equipment3: equipment3.value,
+    equipment4: equipment4.value,
+    tsMoney: tsMoney.value,
+    toMoney: toMoney.value,
   }
 }
 
