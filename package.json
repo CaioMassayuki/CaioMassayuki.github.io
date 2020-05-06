@@ -3,6 +3,7 @@
   "description": "Uma página estática para criação e edição de fichas de personagens de tormenta 20 super simples.",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://github.com/CaioMassayuki/tormenta-20-sheet#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CaioMassayuki/tormenta-20-sheet.git"
@@ -13,14 +14,19 @@
   "bugs": {
     "url": "https://github.com/CaioMassayuki/tormenta-20-sheet/issues"
   },
-  "homepage": "https://github.com/CaioMassayuki/tormenta-20-sheet#readme",
   "scripts": {
     "start": "webpack-dev-server --mode=development --watch",
     "build": "webpack"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build"
+    }
+  },
   "devDependencies": {
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
     "mini-css-extract-plugin": "^0.9.0",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
