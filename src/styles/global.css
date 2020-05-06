@@ -45,3 +45,7 @@ span {
   width: 4px;
   background: black;
 }
+
+.right_gap {
+  margin-right: 24px;
+}

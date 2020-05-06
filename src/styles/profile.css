@@ -3,10 +3,7 @@
 }
 
 .profile_container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
 }
 
 .profile_container input {
@@ -18,23 +15,43 @@
 .logo {
   background-image: url(../assets/logo.png);
   height: 109px;
-  width: 320PX;
+  width: 320px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .profile_info {
+  width: 800px;
   display: grid;
-  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 16px;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px 16px;
+  grid-template-areas: 'Name Name Player Player ImportButton' 'Race Origin Class Class .';
+}
+
+.profile_name {
+  grid-area: Name;
+}
+
+.profile_player {
+  grid-area: Player;
+}
+
+.profile_race {
+  grid-area: Race;
+}
+
+.profile_origin {
+  grid-area: Origin;
+}
+
+.profile_class {
+  grid-area: Class;
 }
 
 .input_holder {
   width: 100%;
-}
-
-.right_gap {
-  margin-right: 24px;
 }
 
 .profile_info-names {
@@ -43,6 +60,7 @@
 }
 
 .character_import {
+  grid-area: ImportButton;
   border: none;
   background: none;
   padding: 12px;
