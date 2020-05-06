@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'BreatheFire-65pg';
-  src: url('assets/BreatheFire-65pg.ttf') format('truetype');
+  src: url('../assets/BreatheFire-65pg.ttf') format('truetype');
 }
 
 body {

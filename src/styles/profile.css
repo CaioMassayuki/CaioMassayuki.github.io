@@ -16,7 +16,7 @@
 }
 
 .logo {
-  background-image: url(assets/logo.png);
+  background-image: url(../assets/logo.png);
   height: 109px;
   width: 320PX;
   background-position: center;
@@ -46,7 +46,7 @@
   border: none;
   background: none;
   padding: 12px;
-  background-image: url(assets/direction.svg);
+  background-image: url(../assets/direction.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

@@ -1,3 +1,13 @@
+import '../styles/armor_defence.css'
+import '../styles/attacks.css'
+import '../styles/attributes.css'
+import '../styles/equipment.css'
+import '../styles/expertise.css'
+import '../styles/global.css'
+import '../styles/profile.css'
+import '../styles/skills.css'
+import '../styles/status.css'
+
 // All Inputs
 // Profile
 const profileName = document.getElementById('profileName')
